@@ -1,13 +1,6 @@
 name: Go Test
 
 on: 
-  push:
-
-  issues:
-    types:
-      - opened
-  schedule:
-    - cron: '10 9 * * *'
   label:
     types:
       - created
