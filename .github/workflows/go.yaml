@@ -3,6 +3,10 @@ name: Go Test
 on: 
   push:
 
+  issues:
+    types:
+      - opened
+
 jobs:
   build:
     runs-on: ubuntu-latest
