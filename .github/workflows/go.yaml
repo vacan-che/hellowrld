@@ -3,8 +3,7 @@ name: Go Test
 on: 
   label:
     types:
-      - created
-
+      - labeled
 
 jobs:
   build:
