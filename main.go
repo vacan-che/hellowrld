@@ -1,5 +1,3 @@
-<LocalContainerImageName>:<ImageTag>ckage main
-
 import "fmt"
 
 func main() {
