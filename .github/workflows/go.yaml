@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.labels.*.name, 'development')
+    if: contains(github.event.pull_request.labels.*.name, 'development')
     steps:
     - uses: actions/checkout@v4
 
