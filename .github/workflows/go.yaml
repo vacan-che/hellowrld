@@ -7,7 +7,7 @@ on:
     types:
       - opened
   schedule:
-    - cron: '0 9 * * *'
+    - cron: '10 9 * * *'
 
 jobs:
   build:
