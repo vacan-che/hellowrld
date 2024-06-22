@@ -1,18 +1,15 @@
 name: Go Test
 
 on: 
-  push:
-
-  issues:
+  label:
     types:
-      - opened
-  schedule:
-    - cron: '10 9 * * *'
+      - created
+
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    if: contains(github.event.issue.labels.*.name, 'development')
     steps:
     - uses: actions/checkout@v4
 
